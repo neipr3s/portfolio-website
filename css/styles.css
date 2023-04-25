@@ -1,0 +1,276 @@
+:root {
+
+    --main-background-color: #ffffff;
+    --main-text-color: black;
+    --header-link-primary-color: black;
+    --header-link-visited-color: black;
+    --link-primary-color:  #ee2222;
+    --link-visited-color: #ee2222;
+    --link-active-color: #0003c1;
+    --focus-color: blue;
+    --button-bg-color: #ee2222;
+    --button-color: black;
+    --border-main-color: black;
+    --grid-item-bg-color: whitesmoke; 
+
+
+    
+  }
+
+  
+ * {box-sizing: border-box;}
+ 
+ body{
+ color:var(--background-color);
+ font-family: 'Anuphan', sans-serif;
+ 
+}
+
+.about-section {
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+}     
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+.page-header__item {
+    flex: 0 1 200px;
+        height: 70px;
+        width: 200px;
+    
+}
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+
+
+.navigation-list {
+    list-style-type: none;
+  }
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  .navigation-list li .navigation-list__item--active {
+    text-decoration: none;
+  }
+
+h1 {
+    font-size: 24px;
+
+    line-height: 1.5;
+
+    font-style: bold;
+    
+}
+
+p {
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    font-style: normal;
+
+
+
+}
+
+a {
+    color: var(--header-link-primary-color);
+  }
+a:visited {
+    color: var(--header-link-visited-color)
+}
+a:hover {
+    text-decoration: none; /* no underlining when hovering over a link */
+    } 
+a:active {
+    color: var(--link-active-color)
+}
+a:focus {
+    outline: 2px var(--focus-color); /* outlines link for keyboard */
+}
+
+table {
+    margin: 40px auto;
+}
+thead {
+    font-size: larger;
+}
+tr {
+    text-align: center;
+}
+
+
+
+.button, button {
+    border: none; /* overwrites browser defaults and resets the border */
+    display: inline-block;
+    font-family: inherit; /* takes the font from the outer container */
+   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--button-color);
+    color: var(--button-bg-color);
+    text-decoration: none;
+    padding: 10px;   /* adds spacing to the button */ 
+    border-radius: 3px; 
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid var(--border-main-color) (0,0,0,0.1);
+    text-align: center;
+    transition: opacity 0.2s;   
+   
+}
+
+button:hover, button:focus, 
+.button:hover, .button:focus {
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    cursor: pointer;
+    opacity: 0.8;
+}
+.secondary-button {
+    border-radius: 3px;
+    background-color:var(--button-bg-color);
+    color: var(--button-color);
+
+}
+.secondary-button:hover, button:focus {
+        background-color: var(--button-color);
+        color: var(--button-bg-color);
+        cursor: pointer;
+        opacity: none;
+        
+}
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    text-align: left;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    
+}
+.profile {
+    width: 100;
+    max-width: 700px;
+    margin: 0 auto
+}
+
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+@supports (display: grid) {
+ .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+ }
+ .grid__item {
+    background-color: var(--grid-item-bg-color);
+    padding: 20px;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+ } 
+ 
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+    50% {
+        fill: #fcffad;
+    }
+   100% {
+        fill: #f76414
+    }
+}
+
+/* @keyframes move {
+    from {
+        transform: translate(0. 50px);
+    }
+    to {transform: translate(200px, 50px);
+    }
+}
+@keyframes move-reverse {
+from {transform: translate(446px, 48px);
+}
+to {
+    transform:translate(100px, 48px)
+} 
+}*/
+
+@keyframes spin {
+    from{transform: rotate(0deg);}
+    to {transform: rotate(360);}
+}
+
+.isle-of-man-graphic{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    transform: rotate(360deg);
+    text-align: center;
+    
+   
+}
+.isle-of-man-graphic{
+    animation: 10s spin infinite  linear;
+}
+
+.port-erin {
+    animation: 4s color-change infinite alternate linear;
+   /* animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;*/
+}
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+      
+    }
+}
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap:10px
+    }
+.grid__item:last-child{
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
