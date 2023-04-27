@@ -45,7 +45,7 @@
 
 
 .navigation-list {
-    list-style-type: none;
+    list-style-type: none;  
   }
   .navigation-list li {
     display: inline-block;
@@ -54,14 +54,20 @@
   .navigation-list li .navigation-list__item--active {
     text-decoration: none;
   }
-
+    
 h1 {
     font-size: 24px;
 
     line-height: 1.5;
 
     font-style: bold;
+
+    margin-bottom: 30px;
     
+}
+
+h2 {
+    font-size: 20px;
 }
 
 p {
@@ -91,17 +97,91 @@ a:focus {
     outline: 2px blue; /* outlines link for keyboard */
 }
 
+
 table {
-    margin: 40px auto;
+    margin: 50px auto;
+    border-collapse: collapse;
+    width: 60%;
 }
-thead {
-    font-size: larger;
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+    font-size: large;
+  }
+  
+  tr:nth-child(2) {
+    background-color: #f2f2f2;
+  }
+  
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
 }
-tr {
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .standard-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem; /* Adds a 1rem gap between form groups */
+  }
+  
+  input,
+  textarea {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #ee2222;
+  }
+  
+  button[type="submit"] {
+    background-color:#ee2222;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color:#ee2222;
+  }
+  
+  .form-group:nth-child(1) {
+    order: 1;
+  }
+  
+  .form-group:nth-child(2) {
+    order: 2;
+  }
+  
+  .form-group:nth-child(3) {
+    order: 3;
+  }
+
+.center-heading{
+    margin: 50px auto;
     text-align: center;
+
 }
-
-
 
 .button {
     border: none; /* overwrites browser defaults and resets the border */
@@ -170,13 +250,13 @@ button:focus {
     cursor: pointer;
     opacity: 0.8;
 }
-.button_secondary {
+.secondary-button {
     border-radius: 3px;
     background-color:#ee2222;
     color: black;
 
 }
-.button_secondary:hover {
+.secondary-button:hover {
         background-color: black;
         color: #ee2222;
         cursor: pointer;
@@ -223,9 +303,11 @@ button:focus {
     margin: 0 auto
 }
 
+
 .grid__item {
     display: inline-block;
     width: 33%;
+    border: 2px solid #fff;
 }
 @supports (display: grid) {
  .grid {
