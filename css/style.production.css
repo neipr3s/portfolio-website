@@ -263,6 +263,19 @@ button:focus {
         opacity: none;
         
 }
+.tertiary-button {
+    border-radius: 3px;
+    background-color:#fdfdfd;
+    color: black;
+
+}
+.tertiary-button:hover {
+        background-color: #fdfdfd;
+        color:#ee2222;
+        cursor: pointer;
+        opacity: none;
+        
+}
 button:focus {
         background-color: black;
         color: #ee2222;
