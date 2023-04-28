@@ -226,8 +226,8 @@ button {
 @media screen and (max-width:767px) {
 .button .secondary-button {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    width: 30%;
     border: 5px;
 }
 }
@@ -308,6 +308,7 @@ button:focus {
     .profile__portrait {
         width: 125px;
         height: auto;
+        margin-left: 20px;
     }
     
 }
