@@ -25,7 +25,7 @@
     display: flex;
     width: 100%;
     padding: 20px;
-    margin: auto;
+    margin: 30px auto;
 }
 .page-header__item {
     -webkit-box-flex: 0;
@@ -63,6 +63,8 @@ h1 {
     font-style: bold;
 
     margin-bottom: 30px;
+
+    margin-top: 10px;
     
 }
 
@@ -123,6 +125,14 @@ form {
     max-width: 600px;
 }
 
+@media screen and (max-width: 767px) {
+    form, .about-section, table {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+
 .form-group {
     margin-bottom: 1rem;
     display: flex;
@@ -178,7 +188,7 @@ form {
   }
 
 .center-heading{
-    margin: 50px auto;
+    margin: 30px auto;
     text-align: center;
 
 }
@@ -263,6 +273,19 @@ button:focus {
         opacity: none;
         
 }
+.tertiary-button {
+    border-radius: 3px;
+    background-color:#fdfdfd;
+    color: black;
+
+}
+.tertiary-button:hover {
+        background-color: #fdfdfd;
+        color:#ee2222;
+        cursor: pointer;
+        opacity: none;
+        
+}
 button:focus {
         background-color: black;
         color: #ee2222;
@@ -274,10 +297,21 @@ button:focus {
     float: left;
     width: 250px;
     margin-right: 40px;
+    margin-bottom: 40px;
     max-width: 400px;
     height: auto;
+    border: 5px;
     border-radius: 50%;
     text-align: left;
+}
+
+@media screen and (max-width:767px) {
+    .profile__portrait {
+        width: 125px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
 }
 
 .page-footer {
