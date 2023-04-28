@@ -25,7 +25,7 @@
     display: flex;
     width: 100%;
     padding: 20px;
-    margin: auto;
+    margin: 30px auto;
 }
 .page-header__item {
     -webkit-box-flex: 0;
@@ -63,6 +63,8 @@ h1 {
     font-style: bold;
 
     margin-bottom: 30px;
+
+    margin-top: 10px;
     
 }
 
@@ -186,7 +188,7 @@ form {
   }
 
 .center-heading{
-    margin: 50px auto;
+    margin: 30px auto;
     text-align: center;
 
 }
