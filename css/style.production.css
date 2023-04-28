@@ -226,8 +226,9 @@ button {
 @media screen and (max-width:767px) {
 .button .secondary-button {
     display: flex;
-    flex-direction: row;
-    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 5px;
 }
 }
