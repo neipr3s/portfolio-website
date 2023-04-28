@@ -229,7 +229,6 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 45%;
     margin: 5px;
 }
 }
