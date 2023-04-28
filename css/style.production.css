@@ -295,7 +295,7 @@ button:focus {
 
 @media screen and (max-width:767px) {
     .profile__portrait {
-        width: 30%;
+        width: 125px;
         height: auto;
     }
     
