@@ -123,6 +123,14 @@ form {
     max-width: 600px;
 }
 
+@media screen and (max-width: 767px) {
+    form, .about-section, table {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+
 .form-group {
     margin-bottom: 1rem;
     display: flex;
@@ -222,9 +230,6 @@ button {
     transition: opacity 0.2s;   
    
 }
-
-
-
 
 button:hover {
     background-color: #ee2222;
