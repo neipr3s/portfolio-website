@@ -223,6 +223,14 @@ button {
    
 }
 
+@media screen and (max-width:767px) {
+.button .secondary-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
 button:hover {
     background-color: #ee2222;
     color: black;
@@ -287,6 +295,7 @@ button:focus {
     float: left;
     width: 250px;
     margin-right: 40px;
+    margin-bottom: 40px;
     max-width: 400px;
     height: auto;
     border-radius: 50%;
