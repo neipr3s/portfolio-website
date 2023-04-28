@@ -223,24 +223,7 @@ button {
    
 }
 
-@media screen and (max-width:767px) {
-.button .secondary-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-}
-.button {
-    width: 80%;
-    margin-bottom: 10%;
-  }
-  .secondary-button {
-    width: 80%;
-    margin-top: 10%;
-  }
 
-}
 
 
 button:hover {
