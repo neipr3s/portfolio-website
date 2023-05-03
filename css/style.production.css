@@ -449,6 +449,12 @@ to {
         grid-template-columns: 1fr 1fr;
       
     }
+    .profile__portrait {
+        float: none;
+    }
+    .profile {
+        text-align: center;
+    }
 }
 @media all and (max-width: 750px) {
     .grid {
